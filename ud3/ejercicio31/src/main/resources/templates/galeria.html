@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agorazein | Galería</title>
+    <link rel="stylesheet" th:href="@{/css/estilos.css}">
+</head>
+<body>
+<header>
+    <h1>Agorazein</h1>
+    <nav th:replace="~{fragments/menu :: menu}"></nav>
+</header>
+
+<main>
+    <h2>Galería</h2>
+    <p>Fotos del colectivo y de sus dos caras más conocidas: C. Tangana y Sticky M.A.</p>
+
+    <div class="galeria">
+        <figure>
+            <img th:src="@{/img/agorazein-grupo.jpg}" alt="Agorazein, foto de grupo en un sofá">
+            <figcaption>
+                <strong>El grupo.</strong>
+                Foto de Agorazein de la época de <em>Siempre</em>. Los cinco juntos, con la estética de colectivo de barrio.
+            </figcaption>
+        </figure>
+        <figure>
+            <img th:src="@{/img/sticky-ma.jpg}" alt="Retrato de Sticky M.A.">
+            <figcaption>
+                <strong>Sticky M.A.</strong>
+                Antes Manto. En <em>Siempre</em> lleva temas como <em>To Pue' Ser</em>, <em>Ángel</em> y <em>Guadalupe</em>.
+            </figcaption>
+        </figure>
+        <figure>
+            <img th:src="@{/img/c-tangana.jpg}" alt="Retrato de C. Tangana">
+            <figcaption>
+                <strong>C. Tangana.</strong>
+                Antón Álvarez, antes Crema. La cara más visible de AGZ.
+            </figcaption>
+        </figure>
+        <figure>
+            <img th:src="@{/img/tangana-directo.jpg}" alt="C. Tangana cantando en un concierto">
+            <figcaption>
+                <strong>En directo.</strong>
+                C. Tangana con el micro. El grupo vuelve junto en 2026 al Movistar Arena.
+            </figcaption>
+        </figure>
+    </div>
+</main>
+
+<footer>Página sobre Agorazein · Madrid</footer>
+</body>
+</html>

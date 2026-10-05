@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agorazein | Inicio</title>
+    <link rel="stylesheet" th:href="@{/css/estilos.css}">
+</head>
+<body>
+<header>
+    <h1>Agorazein</h1>
+    <nav th:replace="~{fragments/menu :: menu}"></nav>
+</header>
+
+<section class="hero">
+    <img th:src="@{/img/madrid_noche.jpg}" alt="Madrid de noche">
+    <h2>El grupo de rap de C. Tangana</h2>
+    <p>Colectivo madrileño de rap formado alrededor de C. Tangana.</p>
+</section>
+
+<main>
+    <h2>¿Quiénes son?</h2>
+    <p>Agorazein (AGZ) es un grupo de rap de Madrid. Empezó hacia 2008, cuando C. Tangana todavía se llamaba Crema y sacó un disco titulado <em>Agorazein</em>. Ese nombre se quedó para el colectivo.</p>
+    <p>El nombre viene del griego y significa algo así como “ir a la plaza” o “placear”.</p>
+
+    <div class="caja">
+        <h2>Integrantes</h2>
+        <ul>
+            <li>C. Tangana (Antón Álvarez), antes Crema</li>
+            <li>Sticky M.A., antes Manto</li>
+            <li>Jerv.agz</li>
+            <li>Fabianni</li>
+            <li>I-Ace</li>
+        </ul>
+    </div>
+
+    <h2>Historia corta</h2>
+    <p>En 2011 publican <em>Kind of Red</em>, su primer disco como grupo, y también <em>Agorazein presenta… C. Tangana</em>.</p>
+    <p>En 2016 sale <em>Siempre</em>, su último álbum conjunto. Después cada uno siguió por su lado. C. Tangana se hizo muy famoso en solitario.</p>
+    <p>En 2025 anunciaron un reencuentro en Madrid para celebrar los 10 años de <em>Siempre</em>. El concierto creció hasta varias noches en el Movistar Arena en noviembre de 2026.</p>
+</main>
+
+<footer>Página sobre Agorazein · Madrid</footer>
+</body>
+</html>
