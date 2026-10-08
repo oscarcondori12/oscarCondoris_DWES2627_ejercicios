@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 420px;
+    margin: 32px auto;
+    color: #1c2430;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+th,
+td {
+    border: 1px solid #c9d4e3;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+th {
+    background: #eef3fa;
+}
+
+.menor {
+    color: #145c32;
+    background: #d8f3e3;
+}
+
+.mayor {
+    color: #b42318;
+    background: #fde2ea;
+}

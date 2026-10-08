@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de números</title>
+    <link rel="stylesheet" th:href="@{/css/estilos.css}">
+</head>
+<body>
+<h1>Listado de números</h1>
+
+<p th:if="${numeros.isEmpty()}">No se ha generado ningún número</p>
+
+<table th:if="${!numeros.isEmpty()}">
+    <thead>
+    <tr>
+        <th>Número</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="n : ${numeros}">
+        <td th:text="${n}" th:class="${n &lt; 50} ? 'menor' : 'mayor'"></td>
+    </tr>
+    </tbody>
+</table>
+
+<p th:if="${!numeros.isEmpty()}">
+    Total números: <span th:text="${numeros.size()}"></span>
+</p>
+</body>
+</html>
